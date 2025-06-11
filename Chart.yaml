@@ -1,0 +1,21 @@
+apiVersion: v2
+name: postgresql
+description: A Helm chart for PostgreSQL StatefulSet with ExternalSecret support
+type: application
+version: 0.1.0
+appVersion: "17"
+keywords:
+  - postgresql
+  - database
+  - statefulset
+  - externalsecret
+home: https://github.com/krakenlabs/simple-postgresql
+maintainers:
+  - name: KrakenLabs Team
+    email: info@krakenlabs.com.ar
+annotations:
+  artifacthub.io/links: |
+    - name: Source
+      url: https://github.com/krakenlabs/simple-postgresql
+    - name: Documentation
+      url: https://github.com/krakenlabs/simple-postgresql#readme

@@ -1,0 +1,34 @@
+replicaCount: 1
+
+image:
+  repository: postgres
+  tag: "17"
+  pullPolicy: IfNotPresent
+
+postgres:
+  database: mydb
+  user: postgres
+  port: 5432
+
+persistence:
+  enabled: true
+  accessModes:
+    - ReadWriteOnce
+  size: 10Gi
+  storageClassName: ""
+
+resources:
+  limits:
+    cpu: "1"
+    memory: 1Gi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+externalSecret:
+  enabled: true
+  secretStoreKind: ClusterSecretStore
+  secretStoreName: cluster-secret-store
+  refreshInterval: 1h
+  remoteSecretName: postgres-password
+  remoteSecretProperty: password
