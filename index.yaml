@@ -9,7 +9,7 @@ entries:
           url: https://github.com/krakenlabs/simple-postgresql#readme
     apiVersion: v2
     appVersion: "17"
-    created: "2025-06-11T16:06:00.641066985-03:00"
+    created: "2025-06-11T16:07:43.958913218-03:00"
     description: A Helm chart for PostgreSQL StatefulSet with ExternalSecret support
     digest: b18f2519a623e7f7709a8409ae1ed961bdafe3def1142256b1656d55e392e9ad
     home: https://github.com/krakenlabs/simple-postgresql
@@ -26,4 +26,3 @@ entries:
     urls:
     - https://charts.krakenlabs.com.ar/charts/postgresql-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-11T16:06:00.640483988-03:00"
